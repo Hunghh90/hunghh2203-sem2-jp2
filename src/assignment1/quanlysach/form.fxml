@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+<Pane fx:controller="assignment1.quanlysach.QuanLySachController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="617.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="txtSName" layoutX="455.0" layoutY="51.0" promptText="ten sv" />
+      <TextField fx:id="txtBName" layoutX="455.0" layoutY="99.0" promptText="ten sach" />
+      <TextField fx:id="txtDate" layoutX="455.0" layoutY="139.0" promptText="ngay muon" />
+      <TextField fx:id="txtDepcrip" layoutX="455.0" layoutY="188.0" promptText="trang thai" />
+      <Text layoutX="65.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Danh Sach" />
+      <Text fx:id="Errors" fill="#eb0808" layoutX="451.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+      <Button onAction="#Add" layoutX="562.0" layoutY="240.0" mnemonicParsing="false" text="Add" />
+      <Button onAction="#Edit" layoutX="455.0" layoutY="240.0" mnemonicParsing="false" text="Edit" />
+      <TableView fx:id="tbv" editable="true" layoutX="6.0" layoutY="51.0" prefHeight="201.0" prefWidth="444.0">
+         <columns>
+            <TableColumn fx:id="STT" prefWidth="27.0" text="STT" />
+            <TableColumn fx:id="SName" prefWidth="123.0" text="Ten SV" />
+            <TableColumn fx:id="BName" prefWidth="116.0" text="Ten Sach" />
+            <TableColumn fx:id="Date" prefWidth="105.0" text="Ngay muon" />
+            <TableColumn fx:id="Depcrip" prefWidth="72.0" text="Trang thai" />
+         </columns>
+      </TableView>
+   </children>
+</Pane>
